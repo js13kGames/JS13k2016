@@ -7,8 +7,8 @@ module.exports = () => {
   gulp.task( 'watch', () => {
     livereload.listen();
     return gulp.watch(
-      [ 'src/js/**/*.js', 'src/css/**/*.css', 'src/index.hbs' ],
-      [ 'build', 'css', 'template', 'zip' ]
+      [ 'src/js/**/*.js', 'src/css/**/*.css', 'src/index.hbs', 'src/*.png' ],
+      [ 'build', 'css', 'template', 'inlineimages', 'report' ]
     );
   });
 };
